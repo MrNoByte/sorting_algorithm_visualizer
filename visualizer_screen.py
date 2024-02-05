@@ -76,7 +76,7 @@ class VisualizerScreen(tk.Frame):
         self.orgArray = self.array[:]
 
     def drawArray(self):
-        print('draw')
+        # print('draw')
         self.canvas.delete('all')
 
         for i in range(self.length):
@@ -95,7 +95,8 @@ class VisualizerScreen(tk.Frame):
 
     def on_reset_click(self):
         """Resets value of array to unsorted"""
-        self.array = self.orgArray
+
+        self.array = self.orgArray[:]
         self.sliderValue.set(self.orgSliderVal)
         self.drawArray()
 
@@ -103,5 +104,8 @@ class VisualizerScreen(tk.Frame):
         """Creates new random array"""
         self.initialize_array()
         self.drawArray()
-
+    def stopSorting(self):
+        # Reset the array to its original state to stop sorting
+        self.array = self.original_array.copy()
+        self.drawArray()
         
