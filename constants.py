@@ -11,3 +11,12 @@ SCR_WIDTH, SCR_HEIGHT = 600, 500
 RECT_COLOR = "red"
 CANVAS_WIDTH, CANVAS_HEIGHT = 550, 400
 ALGO_DELAY_MS = 50
+
+
+# screen key
+KEY_HOME = "home"
+KEY_BUBBLE_SORT = "bubble_sort"
+KEY_INSERTION_SORT = "insertion_sort"
+KEY_QUICK_SORT = "quick_sort"
+KEY_MERGE_SORT = "merge_sort"
+KEY_SELECTION_SORT = "selection_sort"
